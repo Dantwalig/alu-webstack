@@ -35,7 +35,7 @@ frontend www-http
         http-request redirect scheme https code 301 unless { ssl_fc }
 
 frontend www-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.robertony.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.dantwali.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend web-backend
 
